@@ -32,7 +32,7 @@ document.getElementById('mytext').value= s;
 }
 
 connection.on('clickedNext', function() {
-	payload.name = "Pavithra";
+	payload.name = "Gowtham";
     payload['arguments'].execute.inArguments = [{"message": s}];
     payload['metaData'].isConfigured = true;	
 	connection.trigger('updateActivity', payload);
