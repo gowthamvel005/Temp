@@ -1,7 +1,7 @@
 {
 	"workflowApiVersion": "1.0",
 	"metaData": {
-		"icon": "smile.jpg",
+		"icon": "wifi.png",
 		"category": "message"
 	},
 	"type": "REST",
