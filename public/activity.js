@@ -24,7 +24,7 @@ connection.on('initActivity', function(data) {
   /*  var s = document.getElementById("mytext");
 	document.getElementById('demo').value += s.value;*/
 
-	 <div id= "demo"></div>
+	 
 });
 
 function myFunction() {
