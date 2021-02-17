@@ -31,8 +31,10 @@ function myFunction() {
 	var first = document.getElementById('mytext').value;
 	var last = document.getElementById('password').value;
 //	var secound = document.getElementById('date').value;
-	document.getElementById('date').value =  new Date();
-	//console.log(secound);
+document.getElementById("date").addEventListener("change", function() {
+    var secound = this.value;
+
+});
 
 	document.getElementById('demo').value = first + last +secound;
   }
