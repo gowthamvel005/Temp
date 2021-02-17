@@ -24,12 +24,10 @@ connection.on('initActivity', function(data) {
 	
 });
 
-function callme()
-{
-s= document.getElementById("names").value;
-document.getElementById('mytext').value= s;
-
-}
+function myFunction() {
+	var x = document.getElementById("myText").value;
+	document.getElementById("demo").innerHTML = x;
+  }
 
 connection.on('clickedNext', function() {
 	payload.name = "Gowtham";
