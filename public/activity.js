@@ -28,14 +28,11 @@ connection.on('initActivity', function(data) {
 });
 
 function myFunction() {
-	 s = document.getElementById("mytext").value;
-	document.getElementById("demo").innerHTML = s;
-  
-	 pass =document.getElementById("password").value;
-    document.getElementById("demo")[0].innerHTML = pass;
+	var first = document.getElementById('mytext').value;
+	var last = document.getElementById('password').value;
+	var secound = document.getElementById('date').value;
 
-	 date =document.getElementById("date").value;
-	document.getElementById("demo").innerHTML = date;
+	document.getElementById('demo').value = first + last +secound;
   }
 
 connection.on('clickedNext', function() {
