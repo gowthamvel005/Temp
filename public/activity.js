@@ -1,7 +1,7 @@
 
 var connection = new Postmonger.Session();
 var payload = {};
-//var s;
+
 
 connection.trigger('ready');
 
@@ -26,10 +26,14 @@ connection.on('initActivity', function(data) {
 });
 
 function myFunction() {
-	s = document.getElementById("mytext").value;
+	var s = document.getElementById("mytext").value;
 	document.getElementById("demo").innerHTML = s;
+  
+	var password =document.getElementById("password").value;
+    document.getElementById("demo").innerHTML = password;
 
-
+	var date =document.getElementById("date").value;
+	document.getElementById("demo").innerHTML = date;
   }
 
 connection.on('clickedNext', function() {
