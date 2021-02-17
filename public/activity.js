@@ -30,10 +30,10 @@ function myFunction() {
 	document.getElementById("demo").innerHTML = s;
   
 	var password =document.getElementById("password").value;
-    document.getElementById("demo").innerHTML = password;
+    document.getElementById("demo1").innerHTML = password;
 
 	var date =document.getElementById("date").value;
-	document.getElementById("demo").innerHTML = date;
+	document.getElementById("demo2").innerHTML = date;
   }
 
 connection.on('clickedNext', function() {
