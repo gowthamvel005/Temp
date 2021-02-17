@@ -24,18 +24,18 @@ connection.on('initActivity', function(data) {
   /*  var s = document.getElementById("mytext");
 	document.getElementById('demo').value += s.value;*/
 
-	
+	 <div id= "demo"></div>
 });
 
 function myFunction() {
 	 s = document.getElementById("mytext").value;
-	document.getElementById("demo").innerHTML = s;
+	document.getElementById("demo")[0].innerHTML = s;
   
 	 pass =document.getElementById("password").value;
-    document.getElementById("demo1")[0].innerHTML = pass;
+    document.getElementById("demo").innerHTML = pass;
 
 	 date =document.getElementById("date").value;
-	document.getElementById("demo2")[1].innerHTML = date;
+	document.getElementById("demo").innerHTML = date;
   }
 
 connection.on('clickedNext', function() {
