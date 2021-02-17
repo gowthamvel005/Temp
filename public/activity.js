@@ -19,8 +19,8 @@ connection.on('initActivity', function(data) {
 	);
 	var inArguments = hasInArguments ? payload['arguments'].execute.inArguments : {};
 
-    var s = document.getElementById("names");
-	document.getElementById('mytext').value +=  s.options[s.selectedIndex].value;
+    var s = document.getElementById("mytext");
+	document.getElementById('demo').value +=  s.options[s.selectedIndex].value;
 	
 });
 
