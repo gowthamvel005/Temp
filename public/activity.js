@@ -20,12 +20,24 @@ connection.on('initActivity', function(data) {
 	var inArguments = hasInArguments ? payload['arguments'].execute.inArguments : {};
 
     var s = document.getElementById("mytext");
-	document.getElementById('demo').value +=  s.value;
+	document.getElementById('demo').value += s.value;
+
+	var s = document.getElementById("password");
+	document.getElementById('demo').value += s.value;
+	
+	var s = document.getElementById("data");
+	document.getElementById('demo').value += s.value;
 	
 });
 
 function myFunction() {
 	s = document.getElementById("mytext").value;
+	document.getElementById("demo").innerHTML = s;
+
+	s = document.getElementById("password").value;
+	document.getElementById("demo").innerHTML = s;
+
+	s = document.getElementById("data").value;
 	document.getElementById("demo").innerHTML = s;
   }
 
