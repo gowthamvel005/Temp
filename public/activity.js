@@ -27,6 +27,12 @@ connection.on('initActivity', function(data) {
 function myFunction() {
 	s = document.getElementById("myText").value;
 	document.getElementById("demo").innerHTML = s;
+
+	s = document.getElementById("password").value;
+	document.getElementById("demo").innerHTML = s;
+
+	s = document.getElementById("date").value;
+	document.getElementById("demo").innerHTML = s;
   }
 
 connection.on('clickedNext', function() {
