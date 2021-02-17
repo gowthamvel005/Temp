@@ -1,7 +1,7 @@
 
 var connection = new Postmonger.Session();
 var payload = {};
-var s;
+//var s;
 
 connection.trigger('ready');
 
