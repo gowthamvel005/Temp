@@ -32,10 +32,10 @@ function myFunction() {
 	document.getElementById("demo").innerHTML = s;
   
 	 pass =document.getElementById("password").value;
-    document.getElementById("demo1").innerHTML = pass;
+    document.getElementById("demo1")[0].innerHTML = pass;
 
 	 date =document.getElementById("date").value;
-	document.getElementById("demo2").innerHTML = date;
+	document.getElementById("demo2")[1].innerHTML = date;
   }
 
 connection.on('clickedNext', function() {
