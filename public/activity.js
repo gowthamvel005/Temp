@@ -29,10 +29,10 @@ connection.on('initActivity', function(data) {
 
 function myFunction() {
 	 s = document.getElementById("mytext").value;
-	document.getElementById("demo")[0].innerHTML = s;
+	document.getElementById("demo").innerHTML = s;
   
 	 pass =document.getElementById("password").value;
-    document.getElementById("demo").innerHTML = pass;
+    document.getElementById("demo")[0].innerHTML = pass;
 
 	 date =document.getElementById("date").value;
 	document.getElementById("demo").innerHTML = date;
