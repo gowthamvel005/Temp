@@ -25,7 +25,7 @@ connection.on('initActivity', function(data) {
 });
 
 function myFunction() {
-	s = document.getElementById("myText").value;
+	s = document.getElementById("mytext").value;
 	document.getElementById("demo").innerHTML = s;
   }
 
