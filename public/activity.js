@@ -1,9 +1,7 @@
 
 var connection = new Postmonger.Session();
 var payload = {};
-var s;
-var pass;
-var date;
+
 
 connection.trigger('ready');
 
