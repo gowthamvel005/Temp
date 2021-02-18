@@ -31,7 +31,7 @@ function myFunction() {
 //	var secound = document.getElementById('date').value;
 
 	document.getElementById('demo').value = first + last ;
-	//document.getElementById('demo').value =  ;
+	
   }
 
 connection.on('clickedNext', function() {
