@@ -31,12 +31,11 @@ function myFunction() {
 	var first = document.getElementById('mytext').value;
 	var last = document.getElementById('password').value;
 //	var secound = document.getElementById('date').value;
-document.getElementById("date").addEventListener("change", function() {
-    var secound = this.value;
 
-});
 
-	document.getElementById('demo').value = first + last +secound;
+
+
+	document.getElementById('demo').value = first + last ;
   }
 
 connection.on('clickedNext', function() {
