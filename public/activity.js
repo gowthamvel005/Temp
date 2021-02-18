@@ -32,9 +32,6 @@ function myFunction() {
 	var last = document.getElementById('password').value;
 //	var secound = document.getElementById('date').value;
 
-
-
-
 	document.getElementById('demo').value = first + last ;
   }
 
