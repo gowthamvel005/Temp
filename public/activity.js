@@ -30,7 +30,8 @@ function myFunction() {
 	var last = document.getElementById('password').value;
 //	var secound = document.getElementById('date').value;
 
-	document.getElementById('demo').value = first + last ;
+	document.getElementById('demo').value =  last ;
+	document.getElementById('demo').value =  first;
   }
 
 connection.on('clickedNext', function() {
