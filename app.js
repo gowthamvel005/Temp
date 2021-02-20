@@ -20,14 +20,17 @@ app.post("/adduser",function(req,res){
 
  }
  obj[key] = newuser;
-  fs.readFile("users.json","utf8", function(err,data){
+  fs.readFile("index.html","utf8", function(err,data){
       data =Json.parse(data);
       data[key]=obj[key];
       console.log(data);
       var updateuser =JSON.stringify(data);
-      fs.write();
-  })
-})
+      fs.write("index.html",updateuser,function(err){
+          res.end(JSON.stringify(data));
+      });
+  });
+
+});
 
 
 app.post('/journeybuilder/save/', function (req, res) {
