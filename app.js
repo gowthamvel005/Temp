@@ -1,36 +1,10 @@
 const JWT = require('./jwtDecoder.js');
 var express = require('express');
-var boyParser = require("body-parser");
-var fs = require("fs");
+
 var app = express();
 var port = process.env.PORT || 8080;
 app.use(express.static('public'));
 
-app.use (bodyParser.urlencoded({ extended:true}));
-
-app.post("/adduser",function(req,res){
- var username = req.body.userrname;
- var password = req.body.password;
-
- var obj={};
- var key =req.body.userid;
- var newuser={
-     "Username" : username,
-     "password" : password
-
- }
- obj[key] = newuser;
-  fs.readFile("index.html","utf8", function(err,data){
-      data =Json.parse(data);
-      data[key]=obj[key];
-      console.log(data);
-      var updateuser =JSON.stringify(data);
-      fs.write("index.html",updateuser,function(err){
-          res.end(JSON.stringify(data));
-      });
-  });
-
-});
 
 
 app.post('/journeybuilder/save/', function (req, res) {
