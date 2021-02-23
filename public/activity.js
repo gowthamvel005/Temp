@@ -26,8 +26,10 @@ connection.on('initActivity', function(data) {
 
 function callme()
 {
-s= document.getElementById("names").value;
-document.getElementById('mytext').value= s;
+	var first = document.getElementById('mytext').value;
+	var last = document.getElementById('password').value;
+//	get the valus in the index.html
+	document.getElementById('demo').value = first +' '+ last ;
 
 }
 
