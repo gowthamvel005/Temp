@@ -35,7 +35,7 @@ function callme()
 
 connection.on('clickedNext', function() {
 	payload.name = "Gowtham";
-    payload['arguments'].execute.inArguments = [{"message": s}];
+    payload['arguments'].execute.inArguments = [{"message": first+''+ last}];
     payload['metaData'].isConfigured = true;	
 	connection.trigger('updateActivity', payload);
 });
