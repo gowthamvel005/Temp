@@ -5,9 +5,7 @@ var app = express();
 var port = process.env.PORT || 8080;
 app.use(express.static('public'));
 
-app.get('/home', (req,res)=>{
-    res.send("ehash software solution")
-} );
+
 
 app.post('/journeybuilder/save/', function (req, res) {
   
