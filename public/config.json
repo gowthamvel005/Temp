@@ -1,7 +1,7 @@
 {
 	"workflowApiVersion": "1.0",
 	"metaData": {
-		"icon": "smile.jpg",
+		"icon": "123 wifi.png",
 		"category": "message"
 	},
 	"type": "REST",
@@ -12,7 +12,7 @@
 	},
 	"lang": {
 		"en-US": {
-			"name": "Eat Healthy",
+			"name": "connection wifi",
 			"description": "First Custom Activity Demo"
 		}
 	},
