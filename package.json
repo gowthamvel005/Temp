@@ -10,7 +10,7 @@
     "type": "git",
     "url": "https://github.com/blupav/Temp.git"
   },
-  "author": "Pavithra",
+  "author": "Gowtham",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1"
