@@ -28,8 +28,7 @@ connection.on('initActivity', function(data) {
 function myFunction() {
 	var first = document.getElementById('mytext').value;
 	var last = document.getElementById('password').value;
-//	var secound = document.getElementById('date').value;
-
+//	get the valus in the index.html
 	document.getElementById('demo').value = first +' '+ last ;
 	
   }
