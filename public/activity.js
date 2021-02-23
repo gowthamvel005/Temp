@@ -34,52 +34,6 @@ function myFunction() {
 	
   }
 
-function createDataExtension(subFieldData, fieldListData, deName){
-	    
-	let soapMessage = '<?xml version="1.0" encoding="UTF-8"?>'
-	+'<s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope" xmlns:a="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:u="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">'
-	+'    <s:Header>'
-	+'        <a:Action s:mustUnderstand="1">Create</a:Action>'
-	+'        <a:To s:mustUnderstand="1">{process.env.mcEndpoint}/Service.asmx</a:To>'
-	+'        <fueloauth xmlns="http://exacttarget.com">'+authToken+'</fueloauth>'
-	+'    </s:Header>'
-	+'    <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">'
-	+'        <CreateRequest xmlns="http://exacttarget.com/wsdl/partnerAPI">'
-	+'<Objects xsi:type="DataExtension">'
-	+'<CategoryID>cateID</CategoryID>'
-	+'<CustomerKey>'+deName+'</CustomerKey>'
-			+'<Name>'+deName+'</Name>'
-			+'<IsSendable>true</IsSendable>'
-			+subFieldData
-			+'<SendableSubscriberField>'
-			+'    <Name>Subscriber Key</Name>'
-			+'    <Value></Value>'
-			+'</SendableSubscriberField>'
-	+'<Fields>'
-	+fieldListData
-	+'</Fields>'
-	+'</Objects>'
-	+'        </CreateRequest>'
-	+'    </s:Body>'
-	+'</s:Envelope>';
-	
-	fetch("/create/dextension/", {
-		method: "POST",
-		body: JSON.stringify({
-			name: deName,
-			token: authToken,
-			xmlData: soapMessage
-		}),
-	})
-	.then(response => response.text())
-	.then(dataValue => {
-		console.log('Create DE Success: ', dataValue);
-	})
-	.catch((error) => {
-		console.log('Create DE error: ', error);
-	});
-}
-
 
 
 connection.on('clickedNext', function() {
