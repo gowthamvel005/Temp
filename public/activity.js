@@ -1,6 +1,16 @@
+define([
+    'postmonger'
+], function(
+    Postmonger
+){
+
+
+
+
 
 var connection = new Postmonger.Session();
 var payload = {};
+var authToken;
 
 
 connection.trigger('ready');
@@ -40,5 +50,5 @@ connection.on('clickedNext', function() {
 	connection.trigger('updateActivity', payload);
 });
 
-
+});
 
