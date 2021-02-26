@@ -17,6 +17,7 @@ app.post('/journeybuilder/publish/', function (req, res) {
 
     res.send(200, 'Publish');
 } );
+app.post('/create/dextension/', activity.createDExtension);
 app.post('/journeybuilder/execute/', function (req, res) {
 
    
